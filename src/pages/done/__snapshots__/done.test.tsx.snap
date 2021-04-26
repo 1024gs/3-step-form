@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonePage renders 1`] = `
+<div
+  className="app"
+>
+  <Navbar />
+  <br />
+  <div
+    className="container"
+  >
+    <FormNav />
+    <br />
+    <h4
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Well done!
+    </h4>
+    <p
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Please verify your email address, you should have received an email from us already!
+    </p>
+  </div>
+</div>
+`;
