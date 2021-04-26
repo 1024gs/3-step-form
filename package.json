@@ -1,12 +1,11 @@
 {
-  "name": "interview-exercise",
+  "name": "app",
   "version": "1.0.0",
-  "description": "Collaborative exercise to build a form",
-  "repository": "https://gitlab.entia.io/hiring/frontend-exercise.git",
-  "author": "Sam Briggs",
+  "description": "no description",
+  "repository": "",
+  "author": "",
   "license": "UNLICENSED",
   "scripts": {
-    "backend": "json-server --port 3001 --watch ./backend/db.json",
     "postinstall": "node ./build-tools/task-postinstall.js",
     "start": "npm run babel -- src && npm run sass -- src && node ./build-tools/task-start.js & npm run watch",
     "serve:dist": "node ./build-tools/task-start.js --dist",
@@ -20,12 +19,9 @@
     "pre-commit": "node ./build-tools/task-pre-commit.js",
     "watch": "node ./build-tools/task-watch.js",
     "lint": "./node_modules/.bin/eslint ./src/**/*.{ts,tsx}",
-    "tsc": "./node_modules/.bin/tsc --pretty --noEmit --jsx preserve ./src/index.tsx",
-    "mock-on": "node ./build-tools/task-mock.js on",
-    "mock-off": "node ./build-tools/task-mock.js off"
+    "tsc": "./node_modules/.bin/tsc --pretty --noEmit --jsx preserve ./src/index.tsx"
   },
   "devDependencies": {
-    "json-server": "^0.16.3",
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",
     "@babel/plugin-transform-react-jsx": "^7.13.12",
