@@ -1,4 +1,5 @@
 import React from '../../../vendors/react';
+import FormNav from '../../components/form-nav/form-nav';
 import Navbar from '../../components/navbar/navbar';
 
 const IndexPage = () => {
@@ -6,7 +7,11 @@ const IndexPage = () => {
     <div className="app">
       <Navbar />
       <br />
-      <div className="container">Hello world</div>
+      <div className="container">
+        <FormNav />
+        <br />
+        User
+      </div>
     </div>
   );
 };
