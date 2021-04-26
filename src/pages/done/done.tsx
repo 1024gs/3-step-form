@@ -10,7 +10,11 @@ const DonePage = () => {
       <div className="container">
         <FormNav />
         <br />
-        Done
+        <h4 style={{textAlign: 'center'}}>Well done!</h4>
+        <p style={{textAlign: 'center'}}>
+          Please verify your email address, you should have received an email
+          from us already!
+        </p>
       </div>
     </div>
   );
