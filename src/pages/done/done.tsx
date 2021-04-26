@@ -1,8 +1,15 @@
-import React from '../../../vendors/react';
+import React, {useEffect} from '../../../vendors/react';
 import FormNav from '../../components/form-nav/form-nav';
 import Navbar from '../../components/navbar/navbar';
+import useForm from '../../hooks/use-form/use-form';
 
 const DonePage = () => {
+  const [form] = useForm();
+
+  useEffect(() => {
+    console.log(form);
+  }, [form]);
+
   return (
     <div className="app">
       <Navbar />

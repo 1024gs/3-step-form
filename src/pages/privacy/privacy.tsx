@@ -1,8 +1,19 @@
 import React from '../../../vendors/react';
 import FormNav from '../../components/form-nav/form-nav';
 import Navbar from '../../components/navbar/navbar';
+import useForm from '../../hooks/use-form/use-form';
+import {useLocation} from '../../../vendors/wouter/index';
 
 const PrivacyPage = () => {
+  const [form, patchForm] = useForm();
+  const [, setLocation] = useLocation();
+
+  const submit = (e) => {
+    e.preventDefault();
+    patchForm('step')(3);
+    setLocation('/done');
+  };
+
   return (
     <div className="app">
       <Navbar />
@@ -10,11 +21,12 @@ const PrivacyPage = () => {
       <div className="container">
         <FormNav />
         <br />
-
-        <form>
+        <form onSubmit={submit}>
           <div className="form-group">
             <div className="form-check">
               <input
+                checked={form.receiveUpdates}
+                onChange={patchForm('receiveUpdates')}
                 className="form-check-input"
                 type="checkbox"
                 value="updates"
@@ -26,6 +38,8 @@ const PrivacyPage = () => {
             </div>
             <div className="form-check">
               <input
+                checked={form.receiveCommunication}
+                onChange={patchForm('receiveCommunication')}
                 className="form-check-input"
                 type="checkbox"
                 value="communication"
