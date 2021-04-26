@@ -7,5 +7,15 @@ exports[`App renders 1`] = `
   >
     <IndexPage />
   </Route>
+  <Route
+    path="/privacy"
+  >
+    <PrivacyPage />
+  </Route>
+  <Route
+    path="/done"
+  >
+    <DonePage />
+  </Route>
 </Fragment>
 `;

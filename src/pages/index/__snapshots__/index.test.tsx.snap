@@ -9,7 +9,88 @@ exports[`IndexPage renders 1`] = `
   <div
     className="container"
   >
-    Hello world
+    <FormNav />
+    <br />
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="name"
+        >
+          Name: *
+        </label>
+        <input
+          className="form-control"
+          id="name"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="role"
+        >
+          Role:
+        </label>
+        <input
+          className="form-control"
+          id="role"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="email"
+        >
+          Email: *
+        </label>
+        <input
+          className="form-control"
+          id="email"
+          onChange={[Function]}
+          pattern=".+@.+"
+          required={true}
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="password"
+        >
+          Password: *
+        </label>
+        <input
+          className="form-control"
+          id="password"
+          minLength="10"
+          onChange={[Function]}
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\\\d)[a-zA-Z\\\\d]+$"
+          required={true}
+          type="password"
+          value=""
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
   </div>
 </div>
 `;
