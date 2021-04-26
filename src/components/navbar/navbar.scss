@@ -1,0 +1,54 @@
+@import '../../vars';
+
+.navbar {
+  height: $navbar-height;
+  padding-top: $navbar-padding-y;
+  padding-bottom: $navbar-padding-y;
+  box-shadow: 0 -1px 10px #c0c6cb;
+}
+
+.navbar-nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  display: inline-block;
+  height: #{$navbar-height - ($navbar-padding-y * 2)};
+  line-height: #{$navbar-height - ($navbar-padding-y * 2)};
+}
+
+.navbar-brand {
+  font-size: $navbar-brand-font-size;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: theme-color('primary');
+}
+
+.navbar-light {
+  .navbar {
+    background-color: $navbar-light-bg;
+  }
+  .navbar-nav .nav-link {
+    color: $navbar-light-color;
+    &:hover {
+      color: $navbar-light-hover-color;
+    }
+  }
+}

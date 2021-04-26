@@ -1,0 +1,20 @@
+$theme-colors: (
+  'primary': #ff1749,
+  'secondary': #6c757d,
+  'success': #28a745,
+  'danger': #f44336
+);
+
+$container-max-widths: (
+  sm: 576px
+);
+
+// Grid columns
+$grid-columns: 12;
+$grid-gutter-width: 24px;
+
+// Navbar
+$navbar-height: 52px;
+$navbar-padding-y: 8px;
+$navbar-dark-bg: #001521;
+$navbar-light-bg: #f8f9fa;

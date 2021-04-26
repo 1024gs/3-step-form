@@ -1,0 +1,10 @@
+{
+  "name": "react-dom",
+  "version": "16.13.1",
+  "description": "React package for working with the DOM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}

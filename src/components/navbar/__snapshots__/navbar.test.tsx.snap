@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders 1`] = `
+<nav
+  className="navbar navbar-light"
+>
+  <div
+    className="container"
+  >
+    <span
+      className="navbar-brand"
+    >
+      Tray.io
+    </span>
+    <ul
+      className="navbar-nav"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="#"
+        >
+          Menu
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

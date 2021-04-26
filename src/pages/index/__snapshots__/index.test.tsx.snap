@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage renders 1`] = `
+<div
+  className="app"
+>
+  <Navbar />
+  <br />
+  <div
+    className="container"
+  >
+    Hello world
+  </div>
+</div>
+`;

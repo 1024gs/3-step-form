@@ -1,0 +1,23 @@
+import {p as propTypes}from'./index2.js';export{p as default}from'./index2.js';import'./_commonjsHelpers.js';const {
+  array,
+  bool,
+  func,
+  number,
+  object,
+  string,
+  symbol,
+  any,
+  arrayOf,
+  element,
+  elementType,
+  instanceOf,
+  node,
+  objectOf,
+  oneOf,
+  oneOfType,
+  shape,
+  exact,
+  checkPropTypes,
+  resetWarningCache,
+  PropTypes
+} = propTypes;export{PropTypes,any,array,arrayOf,bool,checkPropTypes,element,elementType,exact,func,instanceOf,node,number,object,objectOf,oneOf,oneOfType,resetWarningCache,shape,string,symbol};

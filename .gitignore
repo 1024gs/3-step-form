@@ -1,0 +1,13 @@
+# Ignore dependencies
+node_modules/
+/coverage
+
+/dist
+/src/**/*.css
+/src/**/*.js
+!/src/utils/_.js
+!/src/utils/_.test.js
+!/src/utils/fetch.js
+!/src/utils/fetch.test.js
+!/src/utils/fetch-mock.js
+
